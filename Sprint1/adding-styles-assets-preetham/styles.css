@@ -1,0 +1,128 @@
+/* Font & Theme */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background-image: url('background.png'); 
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Game Container */
+.game-container {
+  background: rgba(30, 41, 59, 0.9);
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+  width: 380px;
+  transition: transform 0.3s ease;
+}
+
+.game-container:hover {
+  transform: scale(1.02);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+/* Scoreboard */
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.score {
+  font-size: 18px;
+}
+
+.score span {
+  font-size: 32px;
+  font-weight: bold;
+  display: block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.vs {
+  font-size: 22px;
+  font-weight: bold;
+  color: #facc15;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+#round-info {
+  margin: 15px 0;
+  font-weight: bold;
+  color: #f472b6;
+}
+
+/* Buttons */
+.choice-btn {
+  background: #374151;
+  border: none;
+  color: white;
+  font-size: 30px;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.choice-btn:hover {
+  background: #4b5563;
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Results */
+.result-display {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+#message {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #a78bfa;
+  transition: color 0.5s ease;
+}
+
+#reset-btn {
+  background: #f97316;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: background 0.3s, transform 0.2s;
+}
+
+#reset-btn:hover {
+  background: #fb923c;
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+}

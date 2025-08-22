@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="scoreboard">
+      <div class="score" id="player-score">You<br><span>0</span></div>
+      <div class="vs">⚡ VS ⚡</div>
+      <div class="score" id="computer-score">Computer<br><span>0</span></div>
+    </div>
+
+    <p id="round-info">Round 1 / 5</p>
+
+    <div class="choices">
+      <button class="choice-btn" data-choice="rock">✊</button>
+      <button class="choice-btn" data-choice="paper">📄</button>
+      <button class="choice-btn" data-choice="scissors">✂️</button>
+    </div>
+
+    <div class="result-display">
+      <p>Your choice: <span id="player-choice">?</span></p>
+      <p>Computer’s choice: <span id="computer-choice">?</span></p>
+    </div>
+
+    <h2 id="message">Make your choice!</h2>
+
+    <button id="reset-btn" class="hidden">🔄 Play Again</button>
+  </div>
+
+  <audio id="click-sound" src="sounds/click.wav"></audio>
+  <audio id="win-sound" src="sounds/win.wav"></audio>
+  <audio id="lose-sound" src="sounds/lose.wav"></audio>
+  <audio id="tie-sound" src="sounds/tie.wav"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

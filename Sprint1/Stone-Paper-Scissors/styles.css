@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #12192c;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  background: #1e2a47;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  width: 350px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #4ade80;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.score {
+  font-size: 18px;
+}
+
+.score span {
+  font-size: 28px;
+  font-weight: bold;
+  display: block;
+}
+
+.vs {
+  font-size: 22px;
+  font-weight: bold;
+  color: #f87171;
+}
+
+#round-info {
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.choices {
+  margin: 15px 0;
+}
+
+.choice-btn {
+  background: #374151;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.choice-btn:hover {
+  background: #4b5563;
+}
+
+.result-display {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+#message {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #60a5fa;
+}
+
+#reset-btn {
+  background: #f97316;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.hidden {
+  display: none;
+}
